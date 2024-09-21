@@ -1,12 +1,11 @@
 import psycopg2
-from datetime import datetime
 
 # Função para conectar ao banco de dados PostgreSQL
 def connect_to_db():
     try:
         conn = psycopg2.connect(
             dbname="tp1_db",  # Substitua pelo nome do seu banco de dados
-            user="dev",  # Substitua pelo seu usuário
+            user="handler",  # Substitua pelo seu usuário
             password="123",  # Substitua pela sua senha
             host="localhost",  # Host, normalmente localhost
             port="5432"  # Porta do PostgreSQL, geralmente 5432
